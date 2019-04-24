@@ -11,7 +11,7 @@ url_name = []
 
 def get():
     hd = {}
-    url = 'https://ori.hangzhou.com.cn/ornews/content/2019-04/18/content_7179596.htm'
+    url = 'URL'
     html = requests.get(url,headers = hd).text
     url_content = re.compile(r'(<div class="j-r-list-c">.*?</div>.*?</div>)',re.S)
     url_contents = re.findall(url_content,html)
