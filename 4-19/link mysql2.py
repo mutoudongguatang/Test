@@ -12,7 +12,6 @@ db = pymysql.connect(host='MySQL的URL',
 #创建游标
 cur = db.cursor()
 
-
 #执行查询SQL，并且只显示前十条数据
 sql = 'select * from chef_food limit 10'
 
